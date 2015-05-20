@@ -4,6 +4,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\PasswordBroker;
 use Illuminate\Foundation\Auth\ResetsPasswords;
+use Illuminate\Support\Facades\Lang;
 
 class PasswordController extends Controller {
 
@@ -32,7 +33,18 @@ class PasswordController extends Controller {
 		$this->auth = $auth;
 		$this->passwords = $passwords;
 
+        $this->subject = Lang::get('email.reset-subject');
+
 		$this->middleware('guest');
 	}
+
+    /**
+     * Get the post register / login redirect path.
+     *
+     * @return string
+     */
+    public function redirectPath(){
+        return 'spares';
+    }
 
 }
