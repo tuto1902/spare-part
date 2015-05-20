@@ -1,0 +1,17 @@
+<?php namespace App\Providers;
+
+use App\{{model}};
+use App\Repositories\{{repository}};
+use Illuminate\Support\ServiceProvider;
+
+class {{class}} extends ServiceProvider{
+
+    public function register()
+    {
+        $this->app->bind('App\Contracts\Repositories\{{contract}}', function()
+        {
+            return new {{repository}}(new {{model}}());
+        });
+    }
+
+}
