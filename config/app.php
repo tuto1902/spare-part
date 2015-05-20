@@ -145,6 +145,15 @@ return [
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
 
+        /*
+         * Repository Service Providers
+         */
+        'App\Providers\CategoryServiceProvider',
+        'App\Providers\BrandServiceProvider',
+        'App\Providers\TransmissionServiceProvider',
+        'App\Providers\FuelServiceProvider',
+        'App\Providers\SpareServiceProvider',
+
 	],
 
 	/*
