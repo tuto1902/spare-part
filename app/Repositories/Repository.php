@@ -10,7 +10,6 @@ abstract class Repository {
 
     public function all(){
         return $this->model->get();
-
     }
 
     public function add($input){
