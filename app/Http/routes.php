@@ -20,8 +20,14 @@ Route::post('categories/delete/{category}', 'CategoryController@postDelete');
 Route::get('categories/edit/{category}', 'CategoryController@getEdit');
 Route::post('categories/edit/{category}', 'CategoryController@postEdit');
 
+// Model routes for spares
+Route::post('spares/delete/{spare}', 'SpareController@postDelete');
+Route::get('spares/edit/{spare}', 'SpareController@getEdit');
+Route::post('spares/edit/{spare}', 'SpareController@postEdit');
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
     'categories' => 'CategoryController',
+    'spares' => 'SpareController'
 ]);
