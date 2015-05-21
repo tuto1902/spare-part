@@ -15,7 +15,13 @@ Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
 
+// Model routes for categories
+Route::post('categories/delete/{category}', 'CategoryController@postDelete');
+Route::get('categories/edit/{category}', 'CategoryController@getEdit');
+Route::post('categories/edit/{category}', 'CategoryController@postEdit');
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
+    'categories' => 'CategoryController',
 ]);
