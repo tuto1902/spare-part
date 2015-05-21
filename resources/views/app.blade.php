@@ -17,6 +17,12 @@
     <!-- MetisMenu CSS -->
     <link href="/components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
 
+    <!-- DataTables CSS -->
+    <link href="/components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="/components/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link href="/dist/css/sb-admin-2.css" rel="stylesheet">
 
@@ -59,8 +65,14 @@
     <!-- Metis Menu Plugin JavaScript -->
     <script src="/components/metisMenu/dist/metisMenu.min.js"></script>
 
+    <!-- DataTables JavaScript -->
+    <script src="/components/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="/components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+
     <!-- Custom Theme JavaScript -->
     <script src="/dist/js/sb-admin-2.js"></script>
+
+    @yield('scripts')
 
 </body>
 

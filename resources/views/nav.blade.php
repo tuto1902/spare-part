@@ -35,15 +35,6 @@
                 <li {{Session::get('currentPage') == 'categories' ? 'active' : ''}}>
                     <a href="{{url('categories')}}">{{trans('nav.categories')}}</a>
                 </li>
-                <li {{Session::get('currentPage') == 'brands' ? 'active' : ''}}>
-                   <a href="{{url('brands')}}">{{trans('nav.brands')}}</a>
-                </li>
-                <li {{Session::get('currentPage') == 'transmissions' ? 'active' : ''}}>
-                    <a href="{{url('transmissions')}}">{{trans('nav.transmissions')}}</a>
-                </li>
-                <li {{Session::get('currentPage') == 'fuels' ? 'active' : ''}}>
-                   <a href="{{url('fuels')}}">{{trans('nav.fuels')}}</a>
-                </li>
                 <li {{Session::get('currentPage') == 'users' ? 'active' : ''}}>
                    <a href="{{url('users')}}">{{trans('nav.users')}}</a>
                 </li>

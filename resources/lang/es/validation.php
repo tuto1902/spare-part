@@ -2,6 +2,7 @@
 
 return [
 
+    'required' => 'Este campo es obligatorio',
 	/*
 	|--------------------------------------------------------------------------
 	| Custom Validation Language Lines
@@ -19,7 +20,7 @@ return [
 		],
         'password' => [
             'required' => 'La contraseña es requerida',
-        ]
+        ],
 	],
 
 	/*
